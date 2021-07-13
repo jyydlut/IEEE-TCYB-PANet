@@ -1,7 +1,7 @@
 # PANet
 The code for "PANet: Patch-Aware Network for Light Field Salient Object Detection"
 
-![Network architecture](/img/network.png)
+![Network architecture](https://github.com/jyydlut/IEEE-TCYB-PANet/blob/main/img/network.jpg)
 
 
 # Requirements
