@@ -78,19 +78,17 @@ class trainer(object):
                 out4, dis4_1, dis4_2 = self.srm(x2f, x2r, 4)
                 gt4, gt2, gt1 = self.getImageVar(focal)
                 gt4, gt2, gt1 = torch.tensor(gt4, dtype=torch.float32).cuda(), torch.tensor(gt2,dtype=torch.float32).cuda(), torch.tensor(gt1, dtype=torch.float32).cuda()
-                loss1 = self.loss_ce(out1, gt1) #+ dis1_1 + dis1_2
-                loss2 = self.loss_ce(out2, gt2) #+ dis2_1 + dis2_2
-                loss4 = self.loss_ce(out4, gt4) #+ dis4_1 + dis4_2
-                loss = loss1 # + loss2 + loss4
+                loss1 = self.loss_ce(out1, gt1) + dis1_1 + dis1_2
+                loss2 = self.loss_ce(out2, gt2) + dis2_1 + dis2_2
+                loss4 = self.loss_ce(out4, gt4) + dis4_1 + dis4_2
+                loss = loss1 + loss2 + loss4
                 loss.backward()
                 clip_gradient(self.optimizer, self.clip)
                 self.optimizer.step()
                 if i % 10 == 0 or i == total_step:
                     print('epoch {:03d}, step {:04d}, loss1: {:.4f} loss2: {:0.4f} loss4: {:0.4f}'
                           .format(epoch, i,loss1.item(),loss2.item(), loss4.item()))
-                save_path = 'ckpt/'
-                if (i + 1) % 10 == 0:
-                    torch.save(self.srm.state_dict(), save_path + 'srm.pth' + '.%d' % i)
+            save_path = 'ckpt/'
             if not os.path.exists(save_path):
                 os.makedirs(save_path)
             if (epoch + 1) % 1 == 0:
