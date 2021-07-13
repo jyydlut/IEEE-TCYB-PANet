@@ -29,7 +29,7 @@ Run train_second_decoder.py for training the second decoder
 
 # Testing
 
-Download pretrained models from here. Code:
+Download pretrained models from [here](https://pan.baidu.com/s/1zUtCIHJsZhfRP_ldkmzozg). Code: qwer
 
 Modify your path of testing dataset in config.py
 
@@ -37,7 +37,7 @@ Run test to inference saliency maps
 
 # Saliency Maps
 
-DUTS-LFSD. Code:  HFUT-LFSD. Code:  LFSD. Code:
+DUTS-LFSD&HFUT-LFSD&LFSD, [Download link](链接：https://pan.baidu.com/s/1WfPjFGI54CwUf2ZLZpyWPQ). Code: qwer
 
 # Contact and Questions
 
