@@ -18,15 +18,21 @@ Numpy 1.16.4
 # Training 
 
 Modify your path of training dataset in config.py
+
 Run train.py for training the saliency model
+
 Run train_mslm.py for training the MSLM model
+
 Run train_srm.py for training the SRM model
+
 Run train_second_decoder.py for training the second decoder
 
 # Testing
 
 Download pretrained models from here. Code:
+
 Modify your path of testing dataset in config.py
+
 Run test to inference saliency maps
 
 # Saliency Maps
