@@ -1,6 +1,8 @@
-# PANet
-The code for "PANet: Patch-Aware Network for Light Field Salient Object Detection"
+# PANet: Patch-Aware Network for Light Field Salient Object Detection
 
+# Introduction
+
+Accepted paper in IEEE Trans on Cybernetics, 'PANet: Patch-Aware Network for Light Field Salient Object Detection', Yongri Piao, Yongyao Jiang, Miao Zhang, Jian Wang and Huchuan Lu.
 ![Network architecture](https://github.com/jyydlut/IEEE-TCYB-PANet/blob/main/img/network.jpg)
 
 
