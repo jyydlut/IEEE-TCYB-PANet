@@ -42,7 +42,7 @@ Run test to inference saliency maps
 
 # Saliency Maps
 
-DUTS-LFSD&HFUT-LFSD&LFSD, [Download link](链接：https://pan.baidu.com/s/1tf1GNfxEAO456qsUySL72A). Code: qwer
+DUTS-LFSD&HFUT-LFSD&LFSD, [Download link](https://pan.baidu.com/s/1tf1GNfxEAO456qsUySL72A). Code: qwer
 
 # Contact and Questions
 
