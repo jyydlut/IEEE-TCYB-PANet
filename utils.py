@@ -18,7 +18,7 @@ def adjust_lr(optimizer, init_lr, epoch, decay_rate=0.1, decay_epoch=40):
 def loss_position(step, out, gt):
   b = out.size()[0]
   Mat16b, Mat16Tb = Variable(Mat16.cuda()), Variable(Mat16T.cuda())
-  Mat16b, Mat64Tb = Mat16b.repeat(b, 1, 1), Mat16Tb.repeat(b, 1, 1)
+  Mat16b, Mat16Tb = Mat16b.repeat(b, 1, 1), Mat16Tb.repeat(b, 1, 1)
   loss_mse= torch.nn.MSELoss()
   step = int(pow(2, step))
   shape = step*16
