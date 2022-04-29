@@ -24,13 +24,13 @@ Numpy 1.16.4
 
 Modify your path of training dataset in config.py
 
-Run train.py for training the saliency model
+Run train.py for training the saliency model, the maximum of training iterations is 500000.
 
-Run train_mslm.py for training the MSLM model
+Run train_mslm.py for training the MSLM model, the maximum of training iterations is 5000.
 
-Run train_srm.py for training the SRM model
+Run train_srm.py for training the SRM model, the maximum of training iterations is 5000.
 
-Run train_second_decoder.py for training the second decoder
+Run train_second_decoder.py for training the second decoder, the maximum of training iterations is 500000.
 
 # Testing
 
